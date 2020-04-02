@@ -22,7 +22,7 @@ msgid "QoS"
 msgstr "QoS"
 
 msgid "Quality of Service"
-msgstr "QOS服务"
+msgstr "IP限速"
 
 msgid "Upload speed (Mbit/s)"
 msgstr "上传速度 (Mbit/s)"
