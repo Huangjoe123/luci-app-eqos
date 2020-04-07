@@ -7,6 +7,5 @@ function index()
 	
 	local page
 
-	entry({"admin", "network", "eqos"}, firstchild(), _("EQoS"), 8)
-	entry({"admin", "network", "eqos"}, cbi("eqos"), _("EQoS"))
+	entry({"admin", "network", "eqos"}, cbi("eqos"), _("EQoS"), 10)
 end
