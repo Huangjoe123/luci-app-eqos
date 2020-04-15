@@ -6,6 +6,6 @@ function index()
 	end
 	
 	local page
-
-	entry({"admin", "network", "eqos"}, cbi("eqos"), _("EQoS"), 10)
+        entry({"admin", "nas"}, firstchild(), "NAS", 45).dependent = false
+	entry({"admin", "network", "eqos"}, cbi("eqos"), _("EQoS"))
 end
