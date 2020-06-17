@@ -15,6 +15,10 @@ LUCI_TITLE:=EQOS - LuCI interface
 LUCI_DEPENDS:=+luci-base +tc +kmod-sched-core +kmod-ifb
 LUCI_PKGARCH:=all
 
+define Package/luci-app-eqos/conffiles
+/etc/config/eqos
+endef
+
 include $(TOPDIR)/feeds/luci/luci.mk
 
 # call BuildPackage - OpenWrt buildroot signature
