@@ -12,8 +12,12 @@ PKG_RELEASE:=1
 PKG_MAINTAINER:=Jianhui Zhao <jianhuizhao329@gmail.com> GaryPang <https://github.com/garypang13/luci-app-eqos>
 
 LUCI_TITLE:=EQOS - LuCI interface
-LUCI_DEPENDS:=+luci-base +tc +kmod-sched-core +kmod-ifb
+LUCI_DEPENDS:=+luci-base +tc-full +kmod-sched-core +kmod-ifb
 LUCI_PKGARCH:=all
+
+define Package/luci-app-eqos/conffiles
+/etc/config/eqos
+endef
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
